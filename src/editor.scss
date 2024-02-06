@@ -1,0 +1,161 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+@import url("../accets/css/symbol-fonts.css");
+
+.wp-block-create-block-pivemo-folder-structure {
+	border: 1px dotted rgb(167, 167, 167);
+	padding: 2em .5em;
+}
+
+.pfs-title {
+	margin-top: 0;
+	margin-bottom: .5em;
+}
+
+:root {
+    --pfs-background-color: white;
+    --pfs-font-color: black;
+    --pfs-line-color: black;
+    --pfs-error-color: #538a30;
+}
+
+.pfs-structure-container ul li {
+    padding-left: 0;
+}
+
+.pfs-structure-container {
+    padding: 1em 0 !important;
+    background-color: var(--pfs-background-color);
+    font-family: Hack,'Fira Code',Consolas,Menlo,Monaco,'Andale Mono','Lucida Console','Lucida Sans Typewriter','DejaVu Sans Mono','Bitstream Vera Sans Mono','Liberation Mono','Nimbus Mono L','Courier New',Courier,monospace;
+
+}
+
+.pfs-structure-container * {
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.pfs-structure-container .pfs-title-text,
+.wp-block-create-block-pivemo-folder-structure .pfs-title-text {
+    margin-bottom: 0;
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid var(--pfs-line-color);
+}
+
+.pfs-structure-container .pfs-title-text i,
+.wp-block-create-block-pivemo-folder-structure .pfs-title-text i {
+    font-size: 23px;
+    transform: translateY(3px);
+}
+
+.pfs-structure-container > ul {
+    margin-top: 1em;
+}
+
+.pfs-structure-container ul,
+.wp-block-create-block-pivemo-folder-structure ul {
+    list-style: none;
+    position: relative;
+    padding-left: 35px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.pfs-structure-container > ul,
+.wp-block-create-block-pivemo-folder-structure >ul {
+    margin-top: 15px !important;
+}
+
+.pfs-structure-container ul::before, 
+.wp-block-create-block-pivemo-folder-structure  ul::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    left: 10px;
+    top: -16px;
+    background-color: var(--pfs-line-color);
+}
+
+.pfs-structure-container ul ul::before,
+.wp-block-create-block-pivemo-folder-structure ul ul::before {
+    height: calc(100% - 13px);
+    top: -5px;
+}
+
+.pfs-structure-container .last-folder::after,
+	.wp-block-create-block-pivemo-folder-structure  .last-folder::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: calc(100% - 25px);
+    top: 16px;
+    left: -28px;
+    background-color: var(--pfs-background-color);
+}
+
+.pfs-structure-container li,
+.wp-block-create-block-pivemo-folder-structure li {
+    position: relative;
+}
+
+.pfs-structure-container li:not(.folder)::before,
+.wp-block-create-block-pivemo-folder-structure  li:not(.folder)::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 26px;
+    left: -25px;
+    top: calc(50% - 3px);
+    background-color: var(--pfs-line-color);
+}
+
+.pfs-structure-container li:not(.file)::before,
+.wp-block-create-block-pivemo-folder-structure  li:not(.file)::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 25px;
+    left: -25px;
+    top: 15px;
+    background-color: var(--pfs-line-color);
+}
+
+.pfs-structure-container li i,
+.wp-block-create-block-pivemo-folder-structure li i {
+    font-size: 1.8rem;
+    transform: translateY(3px);
+}
+
+.pfs-structure-container li > i,
+.wp-block-create-block-pivemo-folder-structure li > i {
+    margin-right: 0.3rem;
+}
+
+.pfs-caption-text-input {
+	margin-top: 1em;
+	border: 1px dotted black;
+	border-radius: 3px;
+}
+
+.pfs-add-new-structure-link {
+	font-size: 13px;
+	padding-top: 1em;
+	color: var(--wp-components-color-accent,var(--wp-admin-theme-color,#3858e9)) !important;
+}
+
+.pfs-block-settings {
+    padding: .5em;
+    background-color: rgb(232, 232, 232);
+}
+
+/* Error */
+.pfs-frontend-error {
+    color: var(--pfs-error-color);
+}

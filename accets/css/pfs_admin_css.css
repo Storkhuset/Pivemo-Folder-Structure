@@ -1,0 +1,185 @@
+@import url("../css/symbol-fonts.css");
+
+.pfs_container {
+    margin-top: 2em;
+    padding: 1em;
+    background-color: white;
+}
+
+.pfs_container * {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+#output-list ul {
+    list-style: none;
+    position: relative;
+    padding-left: 2.2em;
+}
+
+#output-list ul::before {
+    content: "";
+    position: absolute;
+    height: calc(100% + 20px);
+    width: 1px;
+    left: 10px;
+    top: -20px;
+    background-color: black;
+}
+
+#output-list ul ul::before {
+    height: calc(100% + 11px);
+    top: -11px;
+}
+
+#output-list li {
+    position: relative;
+}
+
+#output-list li:not(.folder)::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 36px;
+    left: -32px;
+    top: 50%;
+    background-color: black;
+}
+
+#output-list li:not(.file)::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 32px;
+    left: -32px;
+    top: 15px;
+    background-color: black;
+}
+
+#output-list .add-item-row {
+    position: relative;
+    box-sizing: border-box;
+    padding: 4px 10px;
+    margin-bottom: 20px;
+    background-color: rgb(241, 241, 241);
+    width: fit-content;
+    border-radius: 4px;
+}
+
+#output-list .add-item-row::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: calc(100% - 16px);
+    top: 16px;
+    left: -37px;
+    background-color: white;
+    z-index: 10;
+}
+
+#output-list li input {
+    padding: 0 5px;
+    border: none;
+    border-bottom: 1px solid rgb(86, 86, 86);
+    border-radius: 0;
+    margin-left: 1em;
+    background-color: transparent;
+}
+
+#output-list li select {
+    border: 0;
+    padding: 0 20px;
+    font-size: 1.2rem;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat, repeat;
+    background-position: right 0em top 50%;
+    background-size: .65em auto;
+    background-color: transparent;
+}
+
+#output-list p,
+#output-list input,
+#output-list li,
+#output-list select {
+    font-family: Hack,'Fira Code',Consolas,Menlo,Monaco,'Andale Mono','Lucida Console','Lucida Sans Typewriter','DejaVu Sans Mono','Bitstream Vera Sans Mono','Liberation Mono','Nimbus Mono L','Courier New',Courier,monospace;
+}
+
+
+/* files */
+#output-list li > i {
+    font-size: 1.8rem;
+}
+
+#output-list li > i {
+    margin-right: 0.3rem;
+}
+
+#output-list button {
+    margin-left: 0.5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#output-list .delete-button {
+    color: rgb(175, 34, 34);
+    transition: transform 200ms ease-in-out;
+}
+
+#output-list .delete-button:hover {
+    transform: scale(1.2);
+}
+
+#output-list .delete-button i {
+    font-size: 1.2em;
+}
+
+#output-list .add-button {
+    color: rgb(34, 175, 86);
+    transition: transform 200ms ease-in-out;
+}
+
+#output-list .add-button:hover {
+    transform: scale(1.2);
+}
+
+#output-list .add-button i {
+    font-size: 1.2em;
+}
+
+/* Table */
+.pfs-saved-structures-table {
+    margin-top: 2em;
+}
+
+.pfs-saved-structures-table table tr {
+    margin-bottom: 10px;
+}
+
+.pfs-saved-structures-table .pfs-id-col {
+    /* width: 50px; */
+    font-weight: 600;
+}
+
+.button.pfs-button-red-bg {
+    background-color: red !important;
+    border-color: red !important;
+    margin-left: 5px;
+}
+
+.button.pfs-button-red-bg:hover {
+    background-color: rgb(181, 0, 0) !important;
+    border-color: rgb(181, 0, 0)  !important;
+}
+
+.pfs-copy-shortcode-button {
+    cursor: pointer;
+}
+.pfs-copy-shortcode-button {
+    position: relative;
+}
+.pfs-copy-shortcode-button::before {
+    content: "\f150";}

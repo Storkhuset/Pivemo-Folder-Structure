@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'PPI_Symbols';
+    src: url('./fonts/PPI_Symbol.eot');
+    src: url("./fonts/PPI_Symbol.eot") format("embedded-opentype"), url("./fonts/PPI_Symbols.woff") format("woff"), url("./fonts/PPI_Symbols.woff2") format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+.ppi {
+    font-family: 'PPI_Symbols' !important;
+    font-size: inherit;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.ppi-angular:before {
+    content: "\a010";
+}
+
+.ppi-json:before {
+    content: "\a011";
+}
+
+.ppi-net:before {
+    content: "\a012";
+}
+
+.ppi-c:before {
+    content: "\a013";
+}
+
+.ppi-cpp:before {
+    content: "\a014";
+}
+
+.ppi-css:before {
+    content: "\a015";
+}
+
+.ppi-go:before {
+    content: "\a016";
+}
+
+.ppi-html:before {
+    content: "\a017";
+}
+
+.ppi-java:before {
+    content: "\a018";
+}
+
+.ppi-javascript:before {
+    content: "\a019";
+}
+
+.ppi-markdown:before {
+    content: "\a01a";
+}
+
+.ppi-php:before {
+    content: "\a01b";
+}
+
+.ppi-python:before {
+    content: "\a01c";
+}
+
+.ppi-r:before {
+    content: "\a01d";
+}
+
+.ppi-ruby-on-rails:before {
+    content: "\a01e";
+}
+
+.ppi-ruby:before {
+    content: "\a01f";
+}
+
+.ppi-rust:before {
+    content: "\a020";
+}
+
+.ppi-swift:before {
+    content: "\a021";
+}
+
+.ppi-typescript:before {
+    content: "\a022";
+}
+
+.ppi-vs-code:before {
+    content: "\a023";
+}
+
+.ppi-react:before {
+    content: "\a024";
+}
+
+.ppi-sass:before {
+    content: "\a025";
+}
+
+.ppi-vue:before {
+    content: "\a026";
+}
+
+.ppi-webpack:before {
+    content: "\a027";
+}
+
+.ppi-xml:before {
+    content: "\a028";
+}
+
+.ppi-document:before {
+    content: "\a030";
+}
+
+.ppi-txt:before {
+    content: "\a031";
+}
+
+.ppi-word:before {
+    content: "\a032";
+}
+
+.ppi-excel:before {
+    content: "\a033";
+}
+
+.ppi-powerpoint:before {
+    content: "\a034";
+}
+
+.ppi-image:before {
+    content: "\a035";
+}
+
+.ppi-folder:before {
+    content: "\a036";
+}
+
+.ppi-plus:before {
+    content: "\a0a0";
+}
+
+.ppi-trash:before {
+    content: "\a0a1";
+}
